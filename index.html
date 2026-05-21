@@ -14,53 +14,53 @@
   <style>
     body{
       margin:0;
-      padding:0;
+      padding:15px;
       font-family:'Poppins',sans-serif;
       background: linear-gradient(135deg,#0f172a,#1e293b,#111827);
       min-height:100vh;
       display:flex;
       justify-content:center;
       align-items:center;
-      overflow:hidden;
+      overflow-x:hidden;
     }
 
     .love-card{
-      width:90%;
-      max-width:800px;
+      width:100%;
+      max-width:700px;
       background: rgba(255,255,255,0.08);
       backdrop-filter: blur(12px);
       border:1px solid rgba(255,255,255,0.15);
-      border-radius:25px;
-      padding:40px;
+      border-radius:20px;
+      padding:20px;
       color:white;
       text-align:center;
-      box-shadow:0 0 30px rgba(0,0,0,0.4);
-      animation:fadeIn 2s ease;
-    }
-
-    .title{
-      font-size:42px;
-      font-weight:700;
-      color:#ff4d6d;
-      margin-bottom:25px;
-    }
-
-    .message{
-      font-size:18px;
-      line-height:2;
-      color:#f8fafc;
+      box-shadow:0 0 25px rgba(0,0,0,0.4);
+      animation:fadeIn 1.5s ease;
     }
 
     .heart{
       color:#ff4d6d;
-      font-size:55px;
+      font-size:40px;
       animation:beat 1s infinite;
-      margin-bottom:20px;
+      margin-bottom:10px;
+    }
+
+    .title{
+      font-size:28px;
+      font-weight:700;
+      color:#ff4d6d;
+      margin-bottom:15px;
+    }
+
+    .message{
+      font-size:15px;
+      line-height:1.8;
+      color:#f8fafc;
     }
 
     .footer{
-      margin-top:30px;
-      font-size:22px;
+      margin-top:20px;
+      font-size:18px;
       font-weight:600;
       color:#ffb3c1;
     }
@@ -72,24 +72,29 @@
     }
 
     @keyframes fadeIn{
-      from{
-        opacity:0;
-        transform:translateY(40px);
-      }
-      to{
-        opacity:1;
-        transform:translateY(0);
-      }
+      from{opacity:0; transform:translateY(30px);}
+      to{opacity:1; transform:translateY(0);}
     }
 
     .glow{
-      color:#fff;
-      text-shadow:0 0 10px #ff4d6d,
-                  0 0 20px #ff4d6d,
-                  0 0 40px #ff4d6d;
+      text-shadow:0 0 10px #ff4d6d, 0 0 20px #ff4d6d;
+    }
+
+    /* 📱 Extra small mobile fine tuning */
+    @media (max-width:480px){
+      .love-card{
+        padding:18px;
+      }
+      .title{
+        font-size:24px;
+      }
+      .message{
+        font-size:14px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <div class="love-card">
@@ -102,31 +107,20 @@
       Rimsha... ❤️ <br><br>
 
       Mujhe pata hai tum mujh se naraz ho, 
-      aur shayad meri baaton ne tumhein hurt bhi kiya ho...  
+      aur shayad meri baaton ne tumhein hurt bhi kiya ho... <br><br>
+
       Lekin believe me, mera dil kabhi tumhein takleef dena nahi chahta. <br><br>
 
       Main maanta hoon ke main tumhein tang karta hoon, 
-      baar baar pareshan karta hoon, 
       lekin uski wajah sirf meri mohabbat hai... 🥺 <br><br>
 
-      Tum meri life ka woh hissa ho 
-      jise main kabhi khona nahi chahta. <br><br>
+      Tum meri life ka woh hissa ho jise main kabhi khona nahi chahta. ❤️ <br><br>
 
-      Aur haan...  
-      Main Bitezo se bhi chale jana chahta hoon, 
-      kyunki main apni life mein kuch bara karna chahta hoon, 
-      kuch aisa jo tumhein proud feel karwaye... ✨ <br><br>
+      Main apni life ko better banana chahta hoon... ✨ <br><br>
 
-      Sir ko bhi bol dunga ke main ab yeh kaam nahi karna chahta.  
-      Main apni zindagi ko better banana chahta hoon...  
-      sirf apne liye nahi, balkay tumhare liye bhi. ❤️ <br><br>
+      Agar meri kisi baat ne tumhara dil dukhaya ho to mujhe maaf kar do. 🙏 <br><br>
 
-      Rimsha...  
-      Agar meri kisi baat ne tumhara dil dukhaya ho 
-      to mujhe maaf kar do. 🙏 <br><br>
-
-      Main sach mein tumse bohat zyada mohabbat karta hoon...  
-      I Really Love You Rimsha ❤️
+      Main sach mein tumse bohat zyada mohabbat karta hoon... ❤️
     </p>
 
     <div class="footer">
